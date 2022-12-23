@@ -1,0 +1,37 @@
+p{  
+    margin: 10px auto;
+    text-align: center;
+    font-size: 40px;
+    max-width: 600px;
+    position:relative;
+    }
+    p:before{
+    content: "";
+    display:block;
+    width: 120px;
+    height:2px;
+    background: #000;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    z-index: -2;
+    }
+    p:after{
+    content: "";
+    display:block;
+    width: 120px;
+    height:2px;
+    background: #000;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    z-index: -2;
+    }
+    // span{
+    // background: #fff
+    // }
+
+.social-icons {
+    font-size: 36px;
+    cursor: pointer;
+}

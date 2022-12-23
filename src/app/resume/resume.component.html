@@ -1,0 +1,193 @@
+<section class="section gray-bg" id="resume" *ngFor="let info of details">
+  <div class="container py-3">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="section-title">
+          <h2>Resume:</h2>
+          <h5>I am a good learner and always interested to do complex work.</h5>
+        </div>
+      </div>
+    </div>
+    <div class="row details">
+      <div class="col-lg-4">
+        <div class="card mb-4">
+          <div class="card-body text-center">
+            <img
+              src="../../assets/images/Sanjay.jpg"
+              alt="avatar"
+              class="rounded-circle img-fluid"
+              style="width: 150px"
+            />
+            <h5 class="my-3">{{ info.firstName }} {{ info.lastName }}</h5>
+            <p class="mb-1">Full Stack Developer</p>
+            <p class="mb-4">{{ info.address }}, {{ info.country }}</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-8">
+        <div class="card mb-4">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-sm-3">
+                <h6 class="mb-0">Full Name</h6>
+              </div>
+              <div class="col-sm-9">
+                <p class="text-muted mb-0">
+                  {{ info.firstName }} {{ info.lastName }}
+                </p>
+              </div>
+            </div>
+            <hr />
+            <div class="row">
+              <div class="col-sm-3">
+                <h6 class="mb-0">Email</h6>
+              </div>
+              <div class="col-sm-9">
+                <p class="text-muted mb-0">{{ info.email }}</p>
+              </div>
+            </div>
+            <hr />
+            <div class="row">
+              <div class="col-sm-3">
+                <h6 class="mb-0">Date of Birth</h6>
+              </div>
+              <div class="col-sm-9">
+                <p class="text-muted mb-0">{{ info.dob }}</p>
+              </div>
+            </div>
+            <hr />
+            <div class="row">
+              <div class="col-sm-3">
+                <h6 class="mb-0">Mobile</h6>
+              </div>
+              <div class="col-sm-9">
+                <p class="text-muted mb-0">{{ info.mobile }}</p>
+              </div>
+            </div>
+            <hr />
+            <!-- <div class="row">
+                  <div class="col-sm-3">
+                    <h6 class="mb-0">Marritial Status:</h6>
+                  </div>
+                  <div class="col-sm-9">
+                    <p class="text-muted mb-0">{{ info.status }}</p>
+                  </div>
+                </div>
+                <hr /> -->
+            <div class="row">
+              <div class="col-sm-3">
+                <h6 class="mb-0">Nationality</h6>
+              </div>
+              <div class="col-sm-9">
+                <p class="text-muted mb-0">{{ info.nationality }}</p>
+              </div>
+            </div>
+            <hr />
+            <div class="row">
+              <div class="col-sm-3">
+                <h6 class="mb-0">Address</h6>
+              </div>
+              <div class="col-sm-9">
+                <p class="text-muted mb-0">
+                  {{ info.address }}, {{ info.country }}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6 m-15px-tb">
+        <div class="resume-box">
+          <h3><i class="fas fa-user-graduate me-3"></i>Education:</h3>
+          <ul>
+            <li>
+              <div class="icon">
+                <i class="fas fa-user-graduate"></i>
+              </div>
+              <span class="time">2019 - Present</span>
+              <h5>Bachelor in Computer Application</h5>
+              <p>
+                <b>Aadim National College(TU)</b>
+                <br />
+                <i>Chabhail Chuchepati, Kathmandu, Nepal</i>
+              </p>
+            </li>
+            <li>
+              <div class="icon">
+                <i class="fas fa-user-graduate"></i>
+              </div>
+              <span class="time">2017 - 2019</span>
+              <h5>National Education Board</h5>
+              <p>
+                <b>Nobel Academy Secondary School</b>
+                <br />
+                <i>New-Baneshowr, Kathmandu, Nepal</i>
+              </p>
+            </li>
+            <li>
+              <div class="icon">
+                <i class="fas fa-user-graduate"></i>
+              </div>
+              <span class="time">2005 - 2017</span>
+              <h5>Secondary level</h5>
+              <p>
+                <b>Global Academy English School</b>
+                <br />
+                <i>Bhaktapur, Nepal</i>
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-6 m-15px-tb">
+        <div class="resume-box">
+          <h3><i class="fas fa-briefcase me-3"></i>Work Experience:</h3>
+          <ul>
+            <li>
+              <div class="icon">
+                <i class="fas fa-briefcase"></i>
+              </div>
+              <span class="time">2022 - Present</span>
+              <h5>AADIM INOVATION</h5>
+              <p>
+                <b>Intern</b>
+                <br />
+                <i>Chabhail Chuchepati, Kathmandu, Nepal</i>
+              </p>
+            </li>
+            <li>
+              <div class="icon">
+                <i class="fas fa-briefcase"></i>
+              </div>
+              <span class="time">2022 - Present</span>
+              <h5>SB Solution</h5>
+              <p>
+                <b>Intern</b>
+                <br />
+                <i>Kamalpokhari, Kathmandu, Nepal</i>
+              </p>
+            </li>
+            <li>
+              <div class="icon">
+                <i class="fas fa-briefcase"></i>
+              </div>
+              <span class="time"> Loading... </span>
+              <h5>Loading...</h5>
+              <p>
+                <i class="fa fa-spinner"></i>
+                <br />
+                <i class="fa fa-spinner"></i>
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <app-skill></app-skill>
+  <app-my-project></app-my-project>
+</section>
+<br><br>
+<app-footer></app-footer>

@@ -1,0 +1,27 @@
+<div class="container py-3 bg-white">
+  <div class="row">
+    <div class="title">
+      <h2>My Projects:</h2>
+    </div>
+    <div class="col-4 text-center px-5" *ngFor="let project of list">
+      <div class="card" style="width: 18rem">
+        <img
+          class="card-img-top"
+          src="{{ project.image }}"
+          alt="Card image cap"
+        />
+        <div class="card-body projectDetails">
+          <div class="col-sm-12">
+            <h5 class="card-title">
+              <u>{{ project.name }}</u>
+            </h5>
+            <p class="card-text">
+              {{ project.desc }}
+            </p>
+            <a href="{{ project.url }}" class="btn btn-primary">View Code</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

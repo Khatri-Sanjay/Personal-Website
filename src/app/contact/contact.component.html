@@ -1,0 +1,87 @@
+<section id="contact">
+  <div class="container mt-5 contactContent">
+    <div class="row mt-4">
+      <div class="col-lg-6">
+        <div
+          style="
+            max-width: 100%;
+            overflow: hidden;
+            color: red;
+            width: 500px;
+            height: 500px;
+          "
+        >
+          <div
+            id="embedmap-canvas"
+            style="height: 100%; width: 100%; max-width: 100%"
+          >
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d8275.25129889215!2d85.46242697648998!3d27.64618083340094!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2snp!4v1671725890328!5m2!1sen!2snp"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <a
+            class="googlemaps-html"
+            href="https://www.embed-map.com"
+            id="get-data-forembedmap"
+            >https://www.embed-map.com</a
+          >
+          <style>
+            #embedmap-canvas img {
+              max-width: none !important;
+              background: none !important;
+              font-size: inherit;
+              font-weight: inherit;
+            }
+          </style>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <h2 class="h1-responsive font-weight-bold text-center my-4">
+          Contact me
+        </h2>
+        <hr>
+        <p class="text-center w-responsive mx-auto mb-5">
+          Do you have any questions? Please do not hesitate to contact me
+          directly.
+        </p>
+        <form>
+          <input
+            type="text"
+            class="form-control form-control-lg"
+            placeholder="Name"
+          />
+          <input type="email" class="form-control mt-3" placeholder="Email" />
+          <input type="text" class="form-control mt-3" placeholder="Subject" />
+          <div class="mb-3 mt-3">
+            <textarea
+              class="form-control"
+              rows="5"
+              id="comment"
+              name="text"
+              placeholder="Project Details"
+            ></textarea>
+          </div>
+        </form>
+        <button type="button" class="btn btn-outline-info mt-3">Send</button>
+      </div>
+    </div>
+    <hr />
+    <div class="row py-2 bg-light">
+      <div class="col-3 text-center" *ngFor="let d of list">
+        <i class="{{ d.icon }}"></i>
+        <br />
+        {{ d.name }}
+        <br />
+        {{ d.d }}
+      </div>
+    </div>
+  </div>
+</section>
+<hr />
